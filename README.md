@@ -8,6 +8,11 @@ GET http://<host-ip>:8090/stats
 
 Works with any number of NVIDIA GPUs, and is independent of whatever is using them (LLM servers, gaming, anything with a CUDA/GL context).
 
+![CYD dashboard showing live GPU stats](GPU_Monitor.jpeg)
+
+> **Note:** This project was developed with the help of a local LLM and is
+> published on GitHub as a starting point for your own development.
+
 ## Files
 
 | File | Purpose |
