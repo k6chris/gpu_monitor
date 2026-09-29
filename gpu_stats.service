@@ -1,0 +1,16 @@
+[Unit]
+Description=GPU stats server for CYD dashboard (NVML)
+After=network-online.target
+Wants=network-online.target
+
+
+[Service]
+User=chris
+Type=simple
+WorkingDirectory=/home/chris/Python/gpu_monitor
+ExecStart=/home/chris/Python/gpu_monitor/.venv/bin/python /home/chris/Python/gpu_monitor/gpu_stats_server.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
